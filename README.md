@@ -1,4 +1,17 @@
-# Desensolvimento Web II
+# Desenvolvimento Web II
 
-- [ ] Criar o GitHub da disciplina de Desenvolvimento Web II.
-- [ ]
+- [x] Criar o GitHub da disciplina de Desenvolvimento Web II;
+- [ ] Breve explicação sobre Apache, MySQL e PHP;
+- [ ] Discutir sobre o uso do XAMPP e LAMP;
+  - [ ] Instalação do XAMPP;
+  - [ ] "Instalação" do LAMP;
+    - [ ] Atualização do sistema: ```sudo apt update && sudo apt upgrade```;
+    - [ ] Instalação do Apache: ```sudo apt install apache2```;
+    - [ ] Instalação do MySQL: ```sudo apt install mysql-server```;
+    - [ ] Instalação do PHP: ```sudo apt install php libapache2-mod-php php-mysql```;
+    - [ ] Inicialização do MySQL: ```sudo mysql_secure_installation```;
+    - [ ] Reinicialização do Apache: ```sudo systemctl restart apache2```;
+- [ ] Uso das pastas ```htdocs``` (Windows) ou ```/var/www/html/``` (Linux): onde os arquivos devem ser colocados;
+- [ ] Testando a instalação:
+  - [ ] Arquivo ```php <?php phpinfo(); ?>```
+  - [ ] Teste com navegador: localhost ou 127.0.0.1 (IP);
