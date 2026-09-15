@@ -6,7 +6,7 @@ Nesta disciplina nós iremos focar no desenvolvimento back-end, ou seja, a parte
 
 ## Ambiente de desenvolvimento no Laboratório de Informática
 
-O ambiente de desenvolvimento será o Windows, VS Code, XAMPP e navegador Google Chrome. O XAMPP é um pacote que facilita a instalação e configuração do ambiente de desenvolvimento e inclui o Apache (servidor web), PHP (linguagem de programação que será utilizada nesta disciplina) e MySQL (banco de dados: MySQL/MariaDB). No momento em que este documento foi redigido, o XAMPP estava disponível para download em [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html).
+O ambiente de desenvolvimento será o Windows, VS Code, XAMPP e navegador Google Chrome. O XAMPP é um pacote que facilita a instalação e configuração do ambiente de desenvolvimento e inclui o Apache (servidor web), PHP (linguagem de programação que será utilizada nesta disciplina) e MariaDB (banco de dados). No momento em que este documento foi redigido, o XAMPP estava disponível para download em [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html).
 
 ## Requisições e respostas HTTP
 
@@ -79,23 +79,27 @@ php -v
 Caso alguma ferramenta não esteja instalada no Linux, vocês podem instalá-las através dos gerenciadores de pacotes da sua distribuição. Por exemplo, no Ubuntu, algumas das ferramentas que vocês podem instalar são o *php*, o *curl*, o *ncat* e o *telnet*. Por exemplo, para instalar o *curl* no Linux, você pode utilizar o seguinte comando:
 
 ```bash
-sudo apt-get install curl
+sudo apt install curl
 ```
 
 PHP:
 
 ```bash
-sudo apt-get install php
+sudo apt install php
 ```
 
 *ncat*:
 
 ```bash
-sudo apt-get install ncat
+sudo apt install ncat
 ```
 
 *telnet*:
 
 ```bash
-sudo apt-get install telnet
+sudo apt install telnet
 ```
+
+## Conclusões
+
+A disciplina de Desenvolvimento Web II tem como objetivo ensinar os conceitos de desenvolvimento back-end utilizando a linguagem PHP. O ambiente de desenvolvimento será configurado utilizando o XAMPP no Windows, mas também é possível configurar o ambiente em distribuições Linux. Além disso, foram abordados conceitos importantes sobre requisições e respostas HTTP, bem como o uso do Dev Tools do navegador para inspecionar essas requisições.
