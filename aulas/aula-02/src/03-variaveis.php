@@ -1,4 +1,9 @@
 <?php
+    // Comentário de uma linha
+
+    /**
+     * Comentário de múltiplas linhas
+     */
 
     // Variáveis começam com $ e possuem tipagem dinâmica
     $nome = "Maria";
@@ -10,6 +15,10 @@
     echo $nome;
     echo $idade;
     echo "\n\n"; // Duas quebras de linha
+
+    // Curiosidade: instruções não são case sensitive:
+    ECHO "Hello World!"; // ECHO, EcHo, eChO, etc. são equivalentes
+    ECHO "\n\n";
 
     // Há diferença entre aspas simples e aspas duplas
     echo "Olá, $nome!\n"; // Interpola a variável e interpreta \n
