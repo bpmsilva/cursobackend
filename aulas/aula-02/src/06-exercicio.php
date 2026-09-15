@@ -9,3 +9,6 @@
     }
 ?>
     <h1 style="color: red;"><?php echo $saudacao; ?> Tudo bem com você?</h1>
+
+    <!-- Solução com short-tag -->
+    <h1 style="color: blue;"><?= $saudacao; ?> Tudo bem com você?</h1>
