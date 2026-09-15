@@ -15,3 +15,11 @@
 - [ ] Testando a instalação:
   - [ ] Arquivo ```php <?php phpinfo(); ?>```
   - [ ] Teste com navegador: localhost ou 127.0.0.1 (IP);
+- [ ] Comandos: curl, ncat e telnet, e dev tools dos navegadores;
+- [ ] Códigos de status HTTP: 200, 404 e 500;
+- [ ] Portas: 80 e 443;
+- [ ] Códigos exemplos de PHP:
+  - [ ] "Hello World"
+  - [ ] Data e hora
+- [ ] Exercício:
+  - [ ] "Bom dia/Boa tarde/Bom noite" de acordo com a hora do sistema;
