@@ -1,9 +1,9 @@
 # Desenvolvimento Web II
 
 - [x] Criar o GitHub da disciplina de Desenvolvimento Web II;
-- [ ] Breve explicação sobre Apache, MySQL e PHP;
-- [ ] Discutir sobre o uso do XAMPP e LAMP;
-  - [ ] Instalação do XAMPP;
+- [x] Breve explicação sobre Apache, MySQL e PHP;
+- [x] Discutir sobre o uso do XAMPP e LAMP;
+  - [x] Instalação do XAMPP;
   - [ ] "Instalação" do LAMP;
     - [ ] Atualização do sistema: ```sudo apt update && sudo apt upgrade```;
     - [ ] Instalação do Apache: ```sudo apt install apache2```;
@@ -11,15 +11,16 @@
     - [ ] Instalação do PHP: ```sudo apt install php libapache2-mod-php php-mysql```;
     - [ ] Inicialização do MySQL: ```sudo mysql_secure_installation```;
     - [ ] Reinicialização do Apache: ```sudo systemctl restart apache2```;
-- [ ] Uso das pastas ```htdocs``` (Windows) ou ```/var/www/html/``` (Linux): onde os arquivos devem ser colocados;
-- [ ] Testando a instalação:
-  - [ ] Arquivo ```php <?php phpinfo(); ?>```
-  - [ ] Teste com navegador: localhost ou 127.0.0.1 (IP);
+- [ ] Uso da pasta ```htdocs``` no Windows
+- [ ] Usa da pasta ```/var/www/html/``` no Linux;
+- [x] Testando a instalação:
+  - [x] Arquivo ```php <?php phpinfo(); ?>```
+  - [x] Teste com navegador: localhost ou 127.0.0.1 (IP);
 - [ ] Comandos: curl, ncat e telnet, e dev tools dos navegadores;
-- [ ] Códigos de status HTTP: 200, 404 e 500;
-- [ ] Portas: 80 e 443;
+- [x] Códigos de status HTTP: 200, 404 e 500;
+- [x] Portas: 80 e 443;
 - [ ] Códigos exemplos de PHP:
-  - [ ] "Hello World"
+  - [x] "Hello World"
   - [ ] Data e hora
 - [ ] Exercício:
   - [ ] "Bom dia/Boa tarde/Bom noite" de acordo com a hora do sistema;
