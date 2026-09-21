@@ -1,5 +1,6 @@
 <?php
     // Comentário de uma linha
+    # Outro estilo de comentário de uma linha
 
     /**
      * Comentário de múltiplas linhas
