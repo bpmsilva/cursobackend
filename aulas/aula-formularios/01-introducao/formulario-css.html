@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #cbd5e1;
+            --surface: #ffffff;
+            --background: #eff6ff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem 1rem;
+            display: grid;
+            place-items: center;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            color: var(--text);
+            background: linear-gradient(135deg, #dbeafe, var(--background));
+        }
+
+        main {
+            width: min(100%, 34rem);
+            padding: clamp(1.5rem, 5vw, 2.5rem);
+            background: var(--surface);
+            border-radius: 1rem;
+            box-shadow: 0 1rem 2.5rem rgb(30 64 175 / 15%);
+        }
+
+        h1 {
+            margin: 0 0 1.75rem;
+            text-align: center;
+            font-size: clamp(1.6rem, 4vw, 2rem);
+        }
+
+        form {
+            display: grid;
+            gap: 1.1rem;
+        }
+
+        .campo {
+            display: grid;
+            gap: 0.45rem;
+        }
+
+        label {
+            font-weight: 650;
+        }
+
+        input,
+        textarea,
+        select,
+        button {
+            width: 100%;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 0.75rem 0.85rem;
+            font: inherit;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: 3px solid rgb(37 99 235 / 20%);
+            border-color: var(--primary);
+        }
+
+        textarea {
+            min-height: 8rem;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 0.35rem;
+            border-color: var(--primary);
+            color: #fff;
+            background: var(--primary);
+            cursor: pointer;
+            font-weight: 700;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background: var(--primary-dark);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        footer {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--primary-dark);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Formulário de Contato</h1>
+        <form action="metodo-post.php" method="POST">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="opcao">Método de envio</label>
+                <select id="opcao" name="opcao" required>
+                    <option value="opcao1" selected>POST</option>
+                    <option value="opcao2">GET</option>
+                </select>
+            </div>
+
+            <button type="submit">Enviar mensagem</button>
+            <input type="submit" value="Variáveis Superglobais"
+                formaction="./variaveis-superglobais.php" formmethod="POST">
+        </form>
+    </main>
+
+    <script>
+        // mudança de ação do formulário com base na opção selecionada
+        const form = document.querySelector('form');
+        const select = document.getElementById('opcao');
+
+        select.addEventListener('change', function () {
+            if (this.value === 'opcao1') {
+                form.action = 'metodo-post.php';
+                form.method = 'POST';
+            } else if (this.value === 'opcao2') {
+                form.action = 'metodo-get.php';
+                form.method = 'GET';
+            } 
+        });
+    </script>
+</body>
+
+</html>

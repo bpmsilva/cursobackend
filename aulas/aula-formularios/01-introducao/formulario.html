@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+
+<body>
+    <main>
+        <h1>Formulário de Contato</h1>
+        <form action="metodo-post.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="opcao">Escolha uma opção:</label>
+            <select id="opcao" name="opcao" required>
+                <option value="opcao1" selected>POST</option>
+                <option value="opcao2">GET</option>
+            </select><br><br>
+
+            <button type="submit">Enviar mensagem</button><br><br>
+            <input type="submit" value="Variáveis Superglobais"
+                formaction="./variaveis-superglobais.php" formmethod="POST">
+        </form>
+        <br>
+    </main>
+    <script>
+        // mudança de ação do formulário com base na opção selecionada
+        const form = document.querySelector('form');
+        const select = document.getElementById('opcao');
+
+        select.addEventListener('change', function () {
+            if (this.value === 'opcao1') {
+                form.action = 'metodo-post.php';
+                form.method = 'POST';
+            } else if (this.value === 'opcao2') {
+                form.action = 'metodo-get.php';
+                form.method = 'GET';
+            }
+        });
+    </script>
+</body>
+
+</html>
