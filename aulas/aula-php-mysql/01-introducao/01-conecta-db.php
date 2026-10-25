@@ -15,7 +15,7 @@ $vendas = $consulta->fetchAll(PDO::FETCH_ASSOC);
 
 // Mostrar o resultado.
 echo '<pre>';
-print_r($produtos);
+print_r($vendas);
 echo '</pre>';
 
 ?>
